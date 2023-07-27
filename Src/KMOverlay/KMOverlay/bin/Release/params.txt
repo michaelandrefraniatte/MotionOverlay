@@ -1,0 +1,8 @@
+// Desktop Mouse
+False
+// French Keyboard
+False
+// Sensitivity X
+1
+// Sensitivity Y
+1

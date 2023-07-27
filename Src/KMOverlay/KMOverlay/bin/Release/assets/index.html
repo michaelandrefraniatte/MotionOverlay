@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#kb, #kbtabs, #kbnumlocks, #kbshifts, #kbcontrols, #kbalts, #kbqs, #kbws, #kbes, #kbrs, #kbts, #kbas, #kbss, #kbds, #kbfs, #kbgs, #kbzs, #kbxs, #kbcs, #kbvs, #kbapostrophes, #kbescapes, #kbd1s, #kbd2s, #kbd3s, #kbd4s, #kbd5s, #kbd6s, #kbf1s, #kbf2s, #kbf3s, #kbf4s, #kbf5s {
+    position:absolute;
+    top: 12.5%;
+    left: 0%;
+    margin: auto;
+    height: 75%;
+    width: auto;
+}
+
+#ms, #mswus, #mswds, #msb0s, #msb1s, #msb2s, #msb3s, #msb4s  {
+    position:absolute;
+    top: 12.5%;
+    right: 12.5%;
+    margin: auto;
+    height: 75%;
+    width: auto;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="keyboard">
+      <img id="kb" src="https://appassets/kb.png" />
+      <img id="kbtabs" src="https://appassets/kbtabs.png" />
+      <img id="kbnumlocks" src="https://appassets/kbnumlocks.png" />
+      <img id="kbshifts" src="https://appassets/kbshifts.png" />
+      <img id="kbcontrols" src="https://appassets/kbcontrols.png" />
+      <img id="kbalts" src="https://appassets/kbalts.png" />
+      <img id="kbqs" src="https://appassets/kbqs.png" />
+      <img id="kbws" src="https://appassets/kbws.png" />
+      <img id="kbes" src="https://appassets/kbes.png" />
+      <img id="kbrs" src="https://appassets/kbrs.png" />
+      <img id="kbts" src="https://appassets/kbts.png" />
+      <img id="kbas" src="https://appassets/kbas.png" />
+      <img id="kbss" src="https://appassets/kbss.png" />
+      <img id="kbds" src="https://appassets/kbds.png" />
+      <img id="kbfs" src="https://appassets/kbfs.png" />
+      <img id="kbgs" src="https://appassets/kbgs.png" />
+      <img id="kbzs" src="https://appassets/kbzs.png" />
+      <img id="kbxs" src="https://appassets/kbxs.png" />
+      <img id="kbcs" src="https://appassets/kbcs.png" />
+      <img id="kbvs" src="https://appassets/kbvs.png" />
+      <img id="kbapostrophes" src="https://appassets/kbapostrophes.png" />
+      <img id="kbescapes" src="https://appassets/kbescapes.png" />
+      <img id="kbd1s" src="https://appassets/kbd1s.png" />
+      <img id="kbd2s" src="https://appassets/kbd2s.png" />
+      <img id="kbd3s" src="https://appassets/kbd3s.png" />
+      <img id="kbd4s" src="https://appassets/kbd4s.png" />
+      <img id="kbd5s" src="https://appassets/kbd5s.png" />
+      <img id="kbd6s" src="https://appassets/kbd6s.png" />
+      <img id="kbf1s" src="https://appassets/kbf1s.png" />
+      <img id="kbf2s" src="https://appassets/kbf2s.png" />
+      <img id="kbf3s" src="https://appassets/kbf3s.png" />
+      <img id="kbf4s" src="https://appassets/kbf4s.png" />
+      <img id="kbf5s" src="https://appassets/kbf5s.png" />
+    </div>
+    <div id="mouse">
+      <img id="ms" src="https://appassets/ms.png" />
+      <img id="mswus" src="https://appassets/mswus.png" />
+      <img id="mswds" src="https://appassets/mswds.png" />
+      <img id="msb0s" src="https://appassets/msb0s.png" />
+      <img id="msb1s" src="https://appassets/msb1s.png" />
+      <img id="msb2s" src="https://appassets/msb2s.png" />
+      <img id="msb3s" src="https://appassets/msb3s.png" />
+      <img id="msb4s" src="https://appassets/msb4s.png" />
+    </div>
+
+    <script>
+
+var keyboard = document.getElementById("keyboard");
+var kb = document.getElementById('kb');
+var kbtabs = document.getElementById('kbtabs');
+var kbnumlocks = document.getElementById('kbnumlocks');
+var kbshifts = document.getElementById('kbshifts');
+var kbcontrols = document.getElementById('kbcontrols');
+var kbalts = document.getElementById('kbalts');
+var kbqs = document.getElementById('kbqs');
+var kbws = document.getElementById('kbws');
+var kbes = document.getElementById('kbes');
+var kbrs = document.getElementById('kbrs');
+var kbts = document.getElementById('kbts');
+var kbas = document.getElementById('kbas');
+var kbss = document.getElementById('kbss');
+var kbds = document.getElementById('kbds');
+var kbfs = document.getElementById('kbfs');
+var kbgs = document.getElementById('kbgs');
+var kbzs = document.getElementById('kbzs');
+var kbxs = document.getElementById('kbxs');
+var kbcs = document.getElementById('kbcs');
+var kbvs = document.getElementById('kbvs');
+var kbapostrophes = document.getElementById('kbapostrophes');
+var kbescapes = document.getElementById('kbescapes');
+var kbd1s = document.getElementById('kbd1s');
+var kbd2s = document.getElementById('kbd2s');
+var kbd3s = document.getElementById('kbd3s');
+var kbd4s = document.getElementById('kbd4s');
+var kbd5s = document.getElementById('kbd5s');
+var kbd6s = document.getElementById('kbd6s');
+var kbf1s = document.getElementById('kbf1s');
+var kbf2s = document.getElementById('kbf2s');
+var kbf3s = document.getElementById('kbf3s');
+var kbf4s = document.getElementById('kbf4s');
+var kbf5s = document.getElementById('kbf5s');
+var mouse = document.getElementById("mouse");
+var ms = document.getElementById('ms');
+var mswus = document.getElementById('mswus');
+var mswds = document.getElementById('mswds');
+var msb0s = document.getElementById('msb0s');
+var msb1s = document.getElementById('msb1s');
+var msb2s = document.getElementById('msb2s');
+var msb3s = document.getElementById('msb3s');
+var msb4s = document.getElementById('msb4s');
+
+function setController(KeyboardKeyTab, KeyboardKeyNumberLock, KeyboardKeyLeftShift, KeyboardKeyLeftControl, KeyboardKeyLeftAlt, KeyboardKeyQ, KeyboardKeyW, KeyboardKeyE, KeyboardKeyR, KeyboardKeyT, KeyboardKeyA, KeyboardKeyS, KeyboardKeyD, KeyboardKeyF, KeyboardKeyG, KeyboardKeyZ, KeyboardKeyX, KeyboardKeyC, KeyboardKeyV, KeyboardKeyApostrophe, KeyboardKeyEscape, KeyboardKeyD1, KeyboardKeyD2, KeyboardKeyD3, KeyboardKeyD4, KeyboardKeyD5, KeyboardKeyD6, KeyboardKeyF1, KeyboardKeyF2, KeyboardKeyF3, KeyboardKeyF4, KeyboardKeyF5, MouseButtons0, MouseButtons1, MouseButtons2, MouseButtons3, MouseButtons4, MouseButtons5, MouseButtons6, MouseButtons7, MouseAxisX, MouseAxisY, MouseWheelUp, MouseWheelDown) {
+	try {
+		if (KeyboardKeyTab == 'True') {
+			kbtabs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbtabs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyNumberLock == 'True') {
+			kbnumlocks.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbnumlocks.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyLeftShift == 'True') {
+			kbshifts.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbshifts.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyLeftControl == 'True') {
+			kbcontrols.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbcontrols.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyLeftAlt == 'True') {
+			kbalts.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbalts.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyQ == 'True') {
+			kbqs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbqs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyW == 'True') {
+			kbws.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbws.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyE == 'True') {
+			kbes.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbes.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyR == 'True') {
+			kbrs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbrs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyT == 'True') {
+			kbts.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbts.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyA == 'True') {
+			kbas.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbas.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyS == 'True') {
+			kbss.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbss.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD == 'True') {
+			kbds.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbds.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyF == 'True') {
+			kbfs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbfs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyG == 'True') {
+			kbgs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbgs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyZ == 'True') {
+			kbzs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbzs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyX == 'True') {
+			kbxs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbxs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyC == 'True') {
+			kbcs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbcs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyV == 'True') {
+			kbvs.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbvs.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyApostrophe == 'True') {
+			kbapostrophes.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbapostrophes.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyEscape == 'True') {
+			kbescapes.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbescapes.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD1 == 'True') {
+			kbd1s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbd1s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD2 == 'True') {
+			kbd2s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbd2s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD3 == 'True') {
+			kbd3s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbd3s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD4 == 'True') {
+			kbd4s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbd4s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD5 == 'True') {
+			kbd5s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbd5s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyD6 == 'True') {
+			kbd6s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbd6s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyF1 == 'True') {
+			kbf1s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbf1s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyF2 == 'True') {
+			kbf2s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbf2s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyF3 == 'True') {
+			kbf3s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbf3s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyF4 == 'True') {
+			kbf4s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbf4s.setAttribute("style", "opacity: 0;");
+		}
+		if (KeyboardKeyF5 == 'True') {
+			kbf5s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			kbf5s.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseButtons0 == 'True') {
+			msb0s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			msb0s.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseButtons1 == 'True') {
+			msb1s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			msb1s.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseButtons2 == 'True') {
+			msb2s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			msb2s.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseButtons3 == 'True') {
+			msb3s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			msb3s.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseButtons4 == 'True') {
+			msb4s.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			msb4s.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseWheelUp == 'True') {
+			mswus.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			mswus.setAttribute("style", "opacity: 0;");
+		}
+		if (MouseWheelDown == 'True') {
+			mswds.setAttribute("style", "opacity: 0.5;");
+		}
+		else {
+			mswds.setAttribute("style", "opacity: 0;");
+		}
+		ms.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		msb0s.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		msb1s.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		msb2s.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		msb3s.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		msb4s.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		mswus.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+		mswds.style.transform = "translate(" + parseFloat(MouseAxisX) / 1 + "%, " + parseFloat(MouseAxisY) / 1 + "%)";
+	}
+	catch { }
+}
+
+    </script>
+</body>
+</html>
