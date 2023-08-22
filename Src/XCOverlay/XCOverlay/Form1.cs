@@ -8,6 +8,8 @@ using System.IO;
 using Microsoft.Web.WebView2.Core;
 using Newtonsoft.Json;
 using WebView2 = Microsoft.Web.WebView2.WinForms.WebView2;
+using System.Threading;
+
 namespace XCOverlay
 {
     public partial class Form1 : Form
