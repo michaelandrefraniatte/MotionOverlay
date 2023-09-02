@@ -63,3 +63,16 @@ C:\Users\micha\Documents\File\perso\MotionOverlay\Src\XCOverlay\XCOverlay\obj\Re
 C:\Users\micha\Documents\File\perso\MotionOverlay\Src\XCOverlay\XCOverlay\obj\Release\XCOverlay.csproj.CopyComplete
 C:\Users\micha\Documents\File\perso\MotionOverlay\Src\XCOverlay\XCOverlay\obj\Release\XCOverlay.exe
 C:\Users\micha\Documents\File\perso\MotionOverlay\Src\XCOverlay\XCOverlay\obj\Release\XCOverlay.pdb
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\bin\Release\XCOverlay.exe.config
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\bin\Release\XCOverlay.exe
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\bin\Release\XCOverlay.pdb
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\bin\Release\Newtonsoft.Json.xml
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.Form1.resources
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.Properties.Resources.resources
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.csproj.GenerateResource.cache
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.csproj.CopyComplete
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.exe
+C:\Users\micha\Documents\tool\MotionOverlay\XCOverlay\XCOverlay\obj\Release\XCOverlay.pdb

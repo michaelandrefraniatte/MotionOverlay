@@ -9,6 +9,8 @@ using Microsoft.Web.WebView2.Core;
 using Newtonsoft.Json;
 using WebView2 = Microsoft.Web.WebView2.WinForms.WebView2;
 using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace XCOverlay
 {
@@ -28,6 +30,7 @@ namespace XCOverlay
         public static bool closed = false, Motion = false;
         public static int x, y, Width, Height;
         public WebView2 webView21 = new WebView2();
+        public static List<double> List_A = new List<double>(), List_B = new List<double>(), List_X = new List<double>(), List_Y = new List<double>(), List_LB = new List<double>(), List_RB = new List<double>(), List_LT = new List<double>(), List_RT = new List<double>(), List_MAP = new List<double>(), List_MENU = new List<double>(), List_LSTICK = new List<double>(), List_RSTICK = new List<double>(), List_DU = new List<double>(), List_DD = new List<double>(), List_DL = new List<double>(), List_DR = new List<double>(), List_XBOX = new List<double>();
         public static bool Controller_A, Controller_B, Controller_X, Controller_Y, Controller_LB, Controller_RB, Controller_LT, Controller_RT, Controller_MAP, Controller_MENU, Controller_LSTICK, Controller_RSTICK, Controller_DU, Controller_DD, Controller_DL, Controller_DR, Controller_XBOX;
         public static double Controller_LX, Controller_LY, Controller_RX, Controller_RY, dzrsx = 0f, dzrsy = 0f, dzlsx = 0f, dzlsy = 0f;
         private static Controller[] controller = new Controller[] { null };
@@ -130,23 +133,176 @@ namespace XCOverlay
                     Controller_LY = Scale(Controller1ThumbLeftY, dzlsy / 100f * 32767f, 32767f, 0f, 32767f);
                 if (Controller1ThumbLeftY <= 0f)
                     Controller_LY = Scale(Controller1ThumbLeftY, -32767f, -dzlsy / 100f * 32767f, -32767f, 0f);
-                Controller_A = Controller1ButtonAPressed;
-                Controller_B = Controller1ButtonBPressed;
-                Controller_X = Controller1ButtonXPressed;
-                Controller_Y = Controller1ButtonYPressed;
-                Controller_LB = Controller1ButtonShoulderLeftPressed;
-                Controller_RB = Controller1ButtonShoulderRightPressed;
-                Controller_LT = Controller1TriggerLeftPosition >= 250f ? true : false;
-                Controller_RT = Controller1TriggerRightPosition >= 250f ? true : false;
-                Controller_MAP = Controller1ButtonBackPressed;
-                Controller_MENU = Controller1ButtonStartPressed;
-                Controller_LSTICK = Controller1ThumbpadLeftPressed;
-                Controller_RSTICK = Controller1ThumbpadRightPressed;
-                Controller_DU = Controller1ButtonUpPressed;
-                Controller_DD = Controller1ButtonDownPressed;
-                Controller_DL = Controller1ButtonLeftPressed;
-                Controller_DR = Controller1ButtonRightPressed;
-                Controller_XBOX = false;
+                if (List_A.Count >= 5)
+                {
+                    List_A.RemoveAt(0);
+                    List_A.Add(Controller1ButtonAPressed ? 1 : 0);
+                    Controller_A = List_A.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_A.Add(0);
+                }
+                if (List_B.Count >= 5)
+                {
+                    List_B.RemoveAt(0);
+                    List_B.Add(Controller1ButtonBPressed ? 1 : 0);
+                    Controller_B = List_B.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_B.Add(0);
+                }
+                if (List_X.Count >= 5)
+                {
+                    List_X.RemoveAt(0);
+                    List_X.Add(Controller1ButtonXPressed ? 1 : 0);
+                    Controller_X = List_X.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_X.Add(0);
+                }
+                if (List_Y.Count >= 5)
+                {
+                    List_Y.RemoveAt(0);
+                    List_Y.Add(Controller1ButtonYPressed ? 1 : 0);
+                    Controller_Y = List_Y.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_Y.Add(0);
+                }
+                if (List_LB.Count >= 5)
+                {
+                    List_LB.RemoveAt(0);
+                    List_LB.Add(Controller1ButtonShoulderLeftPressed ? 1 : 0);
+                    Controller_LB = List_LB.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_LB.Add(0);
+                }
+                if (List_RB.Count >= 5)
+                {
+                    List_RB.RemoveAt(0);
+                    List_RB.Add(Controller1ButtonShoulderRightPressed ? 1 : 0);
+                    Controller_RB = List_RB.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_RB.Add(0);
+                }
+                if (List_LT.Count >= 5)
+                {
+                    List_LT.RemoveAt(0);
+                    List_LT.Add((Controller1TriggerLeftPosition >= 100f ? true : false) ? 1 : 0);
+                    Controller_LT = List_LT.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_LT.Add(0);
+                }
+                if (List_RT.Count >= 5)
+                {
+                    List_RT.RemoveAt(0);
+                    List_RT.Add((Controller1TriggerRightPosition >= 100f ? true : false) ? 1 : 0);
+                    Controller_RT = List_RT.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_RT.Add(0);
+                }
+                if (List_MAP.Count >= 5)
+                {
+                    List_MAP.RemoveAt(0);
+                    List_MAP.Add(Controller1ButtonBackPressed ? 1 : 0);
+                    Controller_MAP = List_MAP.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_MAP.Add(0);
+                }
+                if (List_MENU.Count >= 5)
+                {
+                    List_MENU.RemoveAt(0);
+                    List_MENU.Add(Controller1ButtonStartPressed ? 1 : 0);
+                    Controller_MENU = List_MENU.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_MENU.Add(0);
+                }
+                if (List_LSTICK.Count >= 5)
+                {
+                    List_LSTICK.RemoveAt(0);
+                    List_LSTICK.Add(Controller1ThumbpadLeftPressed ? 1 : 0);
+                    Controller_LSTICK = List_LSTICK.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_LSTICK.Add(0);
+                }
+                if (List_RSTICK.Count >= 5)
+                {
+                    List_RSTICK.RemoveAt(0);
+                    List_RSTICK.Add(Controller1ThumbpadRightPressed ? 1 : 0);
+                    Controller_RSTICK = List_RSTICK.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_RSTICK.Add(0);
+                }
+                if (List_DU.Count >= 5)
+                {
+                    List_DU.RemoveAt(0);
+                    List_DU.Add(Controller1ButtonUpPressed ? 1 : 0);
+                    Controller_DU = List_DU.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_DU.Add(0);
+                }
+                if (List_DD.Count >= 5)
+                {
+                    List_DD.RemoveAt(0);
+                    List_DD.Add(Controller1ButtonDownPressed ? 1 : 0);
+                    Controller_DD = List_DD.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_DD.Add(0);
+                }
+                if (List_DL.Count >= 5)
+                {
+                    List_DL.RemoveAt(0);
+                    List_DL.Add(Controller1ButtonLeftPressed ? 1 : 0);
+                    Controller_DL = List_DL.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_DL.Add(0);
+                }
+                if (List_DR.Count >= 5)
+                {
+                    List_DR.RemoveAt(0);
+                    List_DR.Add(Controller1ButtonRightPressed ? 1 : 0);
+                    Controller_DR = List_DR.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_DR.Add(0);
+                }
+                if (List_XBOX.Count >= 5)
+                {
+                    List_XBOX.RemoveAt(0);
+                    List_XBOX.Add(false ? 1 : 0);
+                    Controller_XBOX = List_XBOX.Average() > 0 ? true : false;
+                }
+                else
+                {
+                    List_XBOX.Add(0);
+                }
                 await execScriptHelper($"setController('{Controller_A.ToString()}', '{Controller_B.ToString()}', '{Controller_X.ToString()}', '{Controller_Y.ToString()}', '{Controller_MAP.ToString()}', '{Controller_MENU.ToString()}', '{Controller_DD.ToString()}', '{Controller_DU.ToString()}', '{Controller_DL.ToString()}', '{Controller_DR.ToString()}', '{Controller_LB.ToString()}', '{Controller_RB.ToString()}', '{Controller_LSTICK.ToString()}', '{Controller_RSTICK.ToString()}', '{Controller_LT.ToString()}', '{Controller_RT.ToString()}', '{Controller_XBOX.ToString()}', '{Controller_LX.ToString()}', '{Controller_LY.ToString()}', '{Controller_RX.ToString()}', '{Controller_RY.ToString()}', '{Motion.ToString()}');");
             }
             catch { }
