@@ -389,22 +389,6 @@ namespace XCOverlay
             }
             catch { }
         }
-        private void Form1_Deactivate(object sender, EventArgs e)
-        {
-            var borderHeight = this.Bounds.Height - this.ClientRectangle.Height;
-            this.FormBorderStyle = FormBorderStyle.None;
-        }
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            if (this.FormBorderStyle == FormBorderStyle.FixedToolWindow)
-                return;
-            if (x != 0 & y != 0)
-            {
-                this.Left = x;
-                this.Top = y;
-            }
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
-        }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             closed = true;
