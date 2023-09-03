@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+
+html, body {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+div {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="gamepad">
+      <img id="xbox-controller" src="https://appassets/xc-tr.png" />
+      <img id="stick-left" src="https://appassets/sl-tr.png" />
+      <img id="stick-left-shadow" src="https://appassets/sls-tr.png" />
+      <img id="stick-right" src="https://appassets/sr-tr.png" />
+      <img id="stick-right-shadow" src="https://appassets/srs-tr.png" />
+      <img id="b-shadow" src="https://appassets/bs-tr.png" />
+      <img id="a-shadow" src="https://appassets/as-tr.png" />
+      <img id="x-shadow" src="https://appassets/xs-tr.png" />
+      <img id="y-shadow" src="https://appassets/ys-tr.png" />
+      <img id="back-shadow" src="https://appassets/backs-tr.png" />
+      <img id="select-shadow" src="https://appassets/selects-tr.png" />
+      <img id="down-shadow" src="https://appassets/downs-tr.png" />
+      <img id="left-shadow" src="https://appassets/lefts-tr.png" />
+      <img id="right-shadow" src="https://appassets/rights-tr.png" />
+      <img id="up-shadow" src="https://appassets/ups-tr.png" />
+      <img id="left-shoulder-shadow" src="https://appassets/lss-tr.png" />
+      <img id="right-shoulder-shadow" src="https://appassets/rss-tr.png" />
+      <img id="left-trigger-shadow" src="https://appassets/lts-tr.png" />
+      <img id="right-trigger-shadow" src="https://appassets/rts-tr.png" />
+    </div>
+
+    <script>
+
+var gamepad = document.getElementById("gamepad");
+var xc = document.getElementById("xbox-controller");
+var sl = document.getElementById('stick-left');
+var sr = document.getElementById('stick-right');
+var sls = document.getElementById('stick-left-shadow');
+var srs = document.getElementById('stick-right-shadow');
+var bs = document.getElementById('b-shadow');
+var as = document.getElementById('a-shadow');
+var xs = document.getElementById('x-shadow');
+var ys = document.getElementById('y-shadow');
+var backs = document.getElementById('back-shadow');
+var selects = document.getElementById('select-shadow');
+var downs = document.getElementById('down-shadow');
+var lefts = document.getElementById('left-shadow');
+var rights = document.getElementById('right-shadow');
+var ups = document.getElementById('up-shadow');
+var lss = document.getElementById('left-shoulder-shadow');
+var rss = document.getElementById('right-shoulder-shadow');
+var lts = document.getElementById('left-trigger-shadow');
+var rts = document.getElementById('right-trigger-shadow');
+
+function setController(Controller1ButtonAPressed, Controller1ButtonBPressed, Controller1ButtonXPressed, Controller1ButtonYPressed, Controller1ButtonStartPressed, Controller1ButtonBackPressed, Controller1ButtonDownPressed, Controller1ButtonUpPressed, Controller1ButtonLeftPressed, Controller1ButtonRightPressed, Controller1ButtonShoulderLeftPressed, Controller1ButtonShoulderRightPressed, Controller1ThumbpadLeftPressed, Controller1ThumbpadRightPressed, Controller1TriggerLeftPosition, Controller1TriggerRightPosition, Controller1ButtonXBoxPressed, Controller1ThumbLeftX, Controller1ThumbLeftY, Controller1ThumbRightX, Controller1ThumbRightY, Motion) {
+	try {
+		if (Controller1ThumbpadLeftPressed == 'True') {
+			sls.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			sls.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ThumbpadRightPressed == 'True') {
+			srs.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			srs.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonAPressed == 'True') {
+			as.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			as.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonBPressed == 'True') {
+			bs.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			bs.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonXPressed == 'True') {
+			xs.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			xs.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonYPressed == 'True') {
+			ys.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			ys.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonStartPressed == 'True') {
+			backs.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			backs.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonBackPressed == 'True') {
+			selects.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			selects.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonDownPressed == 'True') {
+			downs.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			downs.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonRightPressed == 'True') {
+			rights.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			rights.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonLeftPressed == 'True') {
+			lefts.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			lefts.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonUpPressed == 'True') {
+			ups.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			ups.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonShoulderLeftPressed == 'True') {
+			lss.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			lss.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1ButtonShoulderRightPressed == 'True') {
+			rss.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			rss.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1TriggerLeftPosition == 'True') {
+			lts.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			lts.setAttribute("style", "opacity: 0;");
+		}
+		if (Controller1TriggerRightPosition == 'True') {
+			rts.setAttribute("style", "opacity: 1;");
+		}
+		else {
+			rts.setAttribute("style", "opacity: 0;");
+		}
+		sl.style.transform = "translate(" + parseFloat(Controller1ThumbLeftX) / 10000 + "%, " + parseFloat(-Controller1ThumbLeftY) / 10000 + "%)";
+		sr.style.transform = "translate(" + parseFloat(Controller1ThumbRightX) / 10000 + "%, " + parseFloat(-Controller1ThumbRightY) / 10000 + "%)";
+		if (Motion == 'True')
+		{ 
+			gamepad.style.transform = "rotate(" + parseFloat(Controller1ThumbRightX) / 600 + "deg) perspective(40px) rotateX(" + parseFloat(-Controller1ThumbRightY) / 6000 + "deg)";
+			gamepad.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			xc.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			sl.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			sr.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			sls.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			srs.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			bs.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			as.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			xs.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			ys.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			backs.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			selects.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			downs.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			lefts.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			rights.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			ups.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			lss.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			rss.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			lts.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+			rts.style.height = (100 * (100 + parseFloat(Controller1ThumbRightY) / 18000) / 100).toString() + "%";
+		}
+	}
+	catch { }
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+// % Of Rescale Deadzone Right Stick X
+0
+// % Of Rescale Deadzone Right Stick Y
+0
+// % Of Rescale Deadzone Left Stick X
+0
+// % Of Rescale Deadzone Left Stick Y
+0
+// Enable Motion
+False
