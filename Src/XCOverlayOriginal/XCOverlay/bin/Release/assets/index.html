@@ -359,6 +359,19 @@
         function setController(Controller1ButtonAPressed, Controller1ButtonBPressed, Controller1ButtonXPressed, Controller1ButtonYPressed, Controller1ButtonStartPressed, Controller1ButtonBackPressed, Controller1ButtonDownPressed, Controller1ButtonUpPressed, Controller1ButtonLeftPressed, Controller1ButtonRightPressed, Controller1ButtonShoulderLeftPressed, Controller1ButtonShoulderRightPressed, Controller1ThumbpadLeftPressed, Controller1ThumbpadRightPressed, Controller1TriggerLeftPosition, Controller1TriggerRightPosition, Controller1ButtonXBoxPressed, Controller1ThumbLeftX, Controller1ThumbLeftY, Controller1ThumbRightX, Controller1ThumbRightY) {
             try {
                 Controller_A = Controller1ButtonAPressed;
+                var buttona = document.getElementsByClassName("button a svelte-1xis06h")[0];
+                if (Controller_A == 'True') {
+                    buttona.classList["add"]("on");
+                }
+                else {
+                    buttona.classList["remove"]("on");
+                }
+                if (Controller1ButtonAPressed == 'True') {
+                    buttona.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttona.setAttribute("style", "opacity: 0;");
+                }
                 Controller_B = Controller1ButtonBPressed;
                 Controller_X = Controller1ButtonXPressed;
                 Controller_Y = Controller1ButtonYPressed;

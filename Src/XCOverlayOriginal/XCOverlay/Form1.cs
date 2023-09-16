@@ -66,7 +66,7 @@ namespace XCOverlay
             CoreWebView2Environment environment = await CoreWebView2Environment.CreateAsync(null, null, options);
             await webView21.EnsureCoreWebView2Async(environment);
             webView21.CoreWebView2.SetVirtualHostNameToFolderMapping("appassets", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
-            webView21.CoreWebView2.Settings.AreDevToolsEnabled = false;
+            webView21.CoreWebView2.Settings.AreDevToolsEnabled = true;
             webView21.Source = new Uri("https://appassets/index.html");
             webView21.Dock = DockStyle.Fill;
             webView21.DefaultBackgroundColor = Color.Transparent;
