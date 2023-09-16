@@ -14,6 +14,10 @@ namespace XCOverlay
         {
             InitializeComponent();
         }
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetWindow(IntPtr hWnd, uint uCmd);
+        [DllImport("user32.dll")]
+        public static extern IntPtr SetFocus(IntPtr hWnd);
         [DllImport("winmm.dll", EntryPoint = "timeBeginPeriod")]
         public static extern uint TimeBeginPeriod(uint ms);
         [DllImport("winmm.dll", EntryPoint = "timeEndPeriod")]
@@ -21,6 +25,7 @@ namespace XCOverlay
         [DllImport("ntdll.dll", EntryPoint = "NtSetTimerResolution")]
         public static extern void NtSetTimerResolution(uint DesiredResolution, bool SetResolution, ref uint CurrentResolution);
         public static uint CurrentResolution = 0;
+        public const uint GW_CHILD = 5;
         public static bool closed = false;
         public static int x, y, Width, Height;
         public WebView2 webView21 = new WebView2();
@@ -41,6 +46,7 @@ namespace XCOverlay
             webView21.Dock = DockStyle.Fill;
             webView21.DefaultBackgroundColor = Color.Transparent;
             webView21.CoreWebView2.NewWindowRequested += CoreWebView2_NewWindowRequested;
+            webView21.NavigationCompleted += WebView21_NavigationCompleted;
             this.Controls.Add(webView21);
             this.Location = new Point(Width - this.Size.Width, Height - this.Size.Height);
         }
@@ -57,6 +63,12 @@ namespace XCOverlay
         {
             e.Handled = true;
             webView21.Source = new System.Uri(e.Uri);
+        }
+        private void WebView21_NavigationCompleted(
+            object sender, CoreWebView2NavigationCompletedEventArgs e)
+        {
+            var child = GetWindow(webView21.Handle, GW_CHILD);
+            SetFocus(child);
         }
         private async Task<String> execScriptHelper(String script)
         {
