@@ -360,12 +360,6 @@
             try {
                 Controller_A = Controller1ButtonAPressed;
                 var buttona = document.getElementsByClassName("button a svelte-1xis06h")[0];
-                if (Controller_A == 'True') {
-                    buttona.classList["add"]("on");
-                }
-                else {
-                    buttona.classList["remove"]("on");
-                }
                 if (Controller1ButtonAPressed == 'True') {
                     buttona.setAttribute("style", "opacity: 1;");
                 }
@@ -379,8 +373,6 @@
                 Controller_RB = Controller1ButtonShoulderRightPressed;
                 Controller_MAP = Controller1ButtonStartPressed;
                 Controller_MENU = Controller1ButtonBackPressed;
-                Controller_LSTICK = Controller1ThumbpadLeftPressed;
-                Controller_RSTICK = Controller1ThumbpadRightPressed;
                 Controller_DU = Controller1ButtonUpPressed;
                 Controller_DD = Controller1ButtonDownPressed;
                 Controller_DL = Controller1ButtonLeftPressed;
@@ -391,12 +383,23 @@
                 triggerleft.style.transform = "scaleX(" + parseFloat(Controller1TriggerLeftPosition) / 250 + ") scaleY(" + parseFloat(Controller1TriggerLeftPosition) / 250 + ") rotate(-69deg)";
                 triggerleft.style.opacity = parseFloat(Controller1TriggerLeftPosition) / 180;
                 Controller_RT = Controller1TriggerRightPosition;
+                var triggerright = document.getElementsByClassName("trigger right svelte-1xis06h")[0];
+                triggerright.style.transform = "scaleX(-" + parseFloat(Controller1TriggerRightPosition) / 250 + ") scaleY(" + parseFloat(Controller1TriggerRightPosition) / 250 + ") rotate(-69deg)";
+                triggerright.style.opacity = parseFloat(Controller1TriggerRightPosition) / 180;
                 Controller_LX = Controller1ThumbLeftX;
                 var stickleft = document.getElementsByClassName("well left svelte-1xis06h")[0];
                 stickleft.firstElementChild.style.transform = "translateX(" + parseFloat(Controller1ThumbLeftX) / 1000 + "%) translateY(" + parseFloat(-Controller1ThumbLeftY) / 1000 + "%) rotateY(0deg) rotateX(0deg) scale(1)";
                 Controller_LY = Controller1ThumbLeftY;
                 Controller_RX = Controller1ThumbRightX;
                 Controller_RY = Controller1ThumbRightY;
+                Controller_LSTICK = Controller1ThumbpadLeftPressed;
+                if (Controller1ThumbpadLeftPressed == 'True') {
+                    stickleft.firstElementChild.classList.add("click");
+                }
+                else {
+                    stickleft.firstElementChild.classList.remove("click");
+                }
+                Controller_RSTICK = Controller1ThumbpadRightPressed;
             }
             catch { }
         }
