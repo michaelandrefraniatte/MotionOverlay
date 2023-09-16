@@ -377,8 +377,6 @@
                 Controller_Y = Controller1ButtonYPressed;
                 Controller_LB = Controller1ButtonShoulderLeftPressed;
                 Controller_RB = Controller1ButtonShoulderRightPressed;
-                Controller_LT = Controller1TriggerLeftPosition;
-                Controller_RT = Controller1TriggerRightPosition;
                 Controller_MAP = Controller1ButtonStartPressed;
                 Controller_MENU = Controller1ButtonBackPressed;
                 Controller_LSTICK = Controller1ThumbpadLeftPressed;
@@ -388,7 +386,14 @@
                 Controller_DL = Controller1ButtonLeftPressed;
                 Controller_DR = Controller1ButtonRightPressed;
                 Controller_XBOX = Controller1ButtonXBoxPressed;
+                Controller_LT = Controller1TriggerLeftPosition;
+                var triggerleft = document.getElementsByClassName("trigger left svelte-1xis06h")[0];
+                triggerleft.style.transform = "scaleX(" + parseFloat(Controller1TriggerLeftPosition) / 250 + ") scaleY(" + parseFloat(Controller1TriggerLeftPosition) / 250 + ") rotate(-69deg)";
+                triggerleft.style.opacity = parseFloat(Controller1TriggerLeftPosition) / 180;
+                Controller_RT = Controller1TriggerRightPosition;
                 Controller_LX = Controller1ThumbLeftX;
+                var stickleft = document.getElementsByClassName("well left svelte-1xis06h")[0];
+                stickleft.firstElementChild.style.transform = "translateX(" + parseFloat(Controller1ThumbLeftX) / 1000 + "%) translateY(" + parseFloat(-Controller1ThumbLeftY) / 1000 + "%) rotateY(0deg) rotateX(0deg) scale(1)";
                 Controller_LY = Controller1ThumbLeftY;
                 Controller_RX = Controller1ThumbRightX;
                 Controller_RY = Controller1ThumbRightY;
