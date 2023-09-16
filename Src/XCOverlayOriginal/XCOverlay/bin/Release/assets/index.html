@@ -367,16 +367,93 @@
                     buttona.setAttribute("style", "opacity: 0;");
                 }
                 Controller_B = Controller1ButtonBPressed;
+                var buttonb = document.getElementsByClassName("button b svelte-1xis06h")[0];
+                if (Controller1ButtonBPressed == 'True') {
+                    buttonb.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttonb.setAttribute("style", "opacity: 0;");
+                }
                 Controller_X = Controller1ButtonXPressed;
+                var buttonx = document.getElementsByClassName("button x svelte-1xis06h")[0];
+                if (Controller1ButtonXPressed == 'True') {
+                    buttonx.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttonx.setAttribute("style", "opacity: 0;");
+                }
                 Controller_Y = Controller1ButtonYPressed;
+                var buttony = document.getElementsByClassName("button y svelte-1xis06h")[0];
+                if (Controller1ButtonYPressed == 'True') {
+                    buttony.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttony.setAttribute("style", "opacity: 0;");
+                }
                 Controller_LB = Controller1ButtonShoulderLeftPressed;
+                var bumperleft = document.getElementsByClassName("bumper left svelte-1xis06h")[0];
+                if (Controller1ButtonShoulderLeftPressed == 'True') {
+                    bumperleft.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    bumperleft.setAttribute("style", "opacity: 0;");
+                }
                 Controller_RB = Controller1ButtonShoulderRightPressed;
+                var bumperright = document.getElementsByClassName("bumper right svelte-1xis06h")[0];
+                if (Controller1ButtonShoulderRightPressed == 'True') {
+                    bumperright.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    bumperright.setAttribute("style", "opacity: 0;");
+                }
                 Controller_MAP = Controller1ButtonStartPressed;
+                var buttonmap = document.getElementsByClassName("button map svelte-1xis06h")[0];
+                if (Controller1ButtonStartPressed == 'True') {
+                    buttonmap.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttonmap.setAttribute("style", "opacity: 0;");
+                }
                 Controller_MENU = Controller1ButtonBackPressed;
+                var buttonmenu = document.getElementsByClassName("button menu svelte-1xis06h")[0];
+                if (Controller1ButtonBackPressed == 'True') {
+                    buttonmenu.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttonmenu.setAttribute("style", "opacity: 0;");
+                }
                 Controller_DU = Controller1ButtonUpPressed;
+                var buttondu = document.getElementsByClassName("dpad du svelte-1xis06h")[0];
+                if (Controller1ButtonUpPressed == 'True') {
+                    buttondu.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttondu.setAttribute("style", "opacity: 0;");
+                }
                 Controller_DD = Controller1ButtonDownPressed;
+                var buttondd = document.getElementsByClassName("dpad dd svelte-1xis06h")[0];
+                if (Controller1ButtonDownPressed == 'True') {
+                    buttondd.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttondd.setAttribute("style", "opacity: 0;");
+                }
                 Controller_DL = Controller1ButtonLeftPressed;
+                var buttondl = document.getElementsByClassName("dpad dl svelte-1xis06h")[0];
+                if (Controller1ButtonLeftPressed == 'True') {
+                    buttondl.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttondl.setAttribute("style", "opacity: 0;");
+                }
                 Controller_DR = Controller1ButtonRightPressed;
+                var buttondr = document.getElementsByClassName("dpad dr svelte-1xis06h")[0];
+                if (Controller1ButtonRightPressed == 'True') {
+                    buttondr.setAttribute("style", "opacity: 1;");
+                }
+                else {
+                    buttondr.setAttribute("style", "opacity: 0;");
+                }
                 Controller_XBOX = Controller1ButtonXBoxPressed;
                 Controller_LT = Controller1TriggerLeftPosition;
                 var triggerleft = document.getElementsByClassName("trigger left svelte-1xis06h")[0];
@@ -387,11 +464,13 @@
                 triggerright.style.transform = "scaleX(-" + parseFloat(Controller1TriggerRightPosition) / 250 + ") scaleY(" + parseFloat(Controller1TriggerRightPosition) / 250 + ") rotate(-69deg)";
                 triggerright.style.opacity = parseFloat(Controller1TriggerRightPosition) / 180;
                 Controller_LX = Controller1ThumbLeftX;
+                Controller_LY = Controller1ThumbLeftY;
                 var stickleft = document.getElementsByClassName("well left svelte-1xis06h")[0];
                 stickleft.firstElementChild.style.transform = "translateX(" + parseFloat(Controller1ThumbLeftX) / 1000 + "%) translateY(" + parseFloat(-Controller1ThumbLeftY) / 1000 + "%) rotateY(0deg) rotateX(0deg) scale(1)";
-                Controller_LY = Controller1ThumbLeftY;
                 Controller_RX = Controller1ThumbRightX;
                 Controller_RY = Controller1ThumbRightY;
+                var stickright = document.getElementsByClassName("well right svelte-1xis06h")[0];
+                stickright.firstElementChild.style.transform = "translateX(" + parseFloat(Controller1ThumbRightX) / 1000 + "%) translateY(" + parseFloat(-Controller1ThumbRightY) / 1000 + "%) rotateY(0deg) rotateX(0deg) scale(1)";
                 Controller_LSTICK = Controller1ThumbpadLeftPressed;
                 if (Controller1ThumbpadLeftPressed == 'True') {
                     stickleft.firstElementChild.classList.add("click");
@@ -400,6 +479,12 @@
                     stickleft.firstElementChild.classList.remove("click");
                 }
                 Controller_RSTICK = Controller1ThumbpadRightPressed;
+                if (Controller1ThumbpadRightPressed == 'True') {
+                    stickright.firstElementChild.classList.add("click");
+                }
+                else {
+                    stickright.firstElementChild.classList.remove("click");
+                }
             }
             catch { }
         }
