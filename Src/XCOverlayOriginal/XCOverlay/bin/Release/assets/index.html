@@ -6,8 +6,6 @@
     <meta name="keywords" content="test, gamepad, web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-
     <title>test-gamepad</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -286,8 +284,6 @@
                 opacity: 1;
             }
         }
-
-        /*# sourceMappingURL=bundle.css.map */
 
         body,
         html {
@@ -951,69 +947,42 @@
                 attr_dev(div0, "class", "pad svelte-1xis06h");
                 add_location(div0, file, 94, 1, 1831);
                 attr_dev(div1, "class", "stick svelte-1xis06h");
-                set_style(div1, "transform", /*stickl*/ ctx[1]());
-                toggle_class(div1, "click", /*buttonMap*/ ctx[0].lstick);
                 add_location(div1, file, 96, 2, 1882);
                 attr_dev(div2, "class", "well left svelte-1xis06h");
                 add_location(div2, file, 95, 1, 1856);
                 attr_dev(div3, "class", "stick svelte-1xis06h");
-                set_style(div3, "transform", /*stickr*/ ctx[2]());
-                toggle_class(div3, "click", /*buttonMap*/ ctx[0].rstick);
                 add_location(div3, file, 99, 2, 2006);
                 attr_dev(div4, "class", "well right svelte-1xis06h");
                 add_location(div4, file, 98, 1, 1979);
                 attr_dev(button0, "class", "button a svelte-1xis06h");
-                toggle_class(button0, "on", /*buttonMap*/ ctx[0].a);
                 add_location(button0, file, 101, 1, 2103);
                 attr_dev(button1, "class", "button b svelte-1xis06h");
-                toggle_class(button1, "on", /*buttonMap*/ ctx[0].b);
                 add_location(button1, file, 102, 1, 2162);
                 attr_dev(button2, "class", "button x svelte-1xis06h");
-                toggle_class(button2, "on", /*buttonMap*/ ctx[0].x);
                 add_location(button2, file, 103, 1, 2221);
                 attr_dev(button3, "class", "button y svelte-1xis06h");
-                toggle_class(button3, "on", /*buttonMap*/ ctx[0].y);
                 add_location(button3, file, 104, 1, 2280);
                 attr_dev(button4, "class", "button map svelte-1xis06h");
-                toggle_class(button4, "on", /*buttonMap*/ ctx[0].map);
                 add_location(button4, file, 105, 1, 2339);
                 attr_dev(button5, "class", "button menu svelte-1xis06h");
-                toggle_class(button5, "on", /*buttonMap*/ ctx[0].menu);
                 add_location(button5, file, 106, 1, 2402);
                 attr_dev(button6, "class", "button xbox svelte-1xis06h");
-                toggle_class(button6, "on", /*buttonMap*/ ctx[0].xbox);
                 add_location(button6, file, 107, 1, 2467);
                 attr_dev(button7, "class", "dpad du svelte-1xis06h");
-                toggle_class(button7, "on", /*buttonMap*/ ctx[0].du);
                 add_location(button7, file, 108, 1, 2532);
                 attr_dev(button8, "class", "dpad dr svelte-1xis06h");
-                toggle_class(button8, "on", /*buttonMap*/ ctx[0].dr);
                 add_location(button8, file, 109, 1, 2591);
                 attr_dev(button9, "class", "dpad dd svelte-1xis06h");
-                toggle_class(button9, "on", /*buttonMap*/ ctx[0].dd);
                 add_location(button9, file, 110, 1, 2650);
                 attr_dev(button10, "class", "dpad dl svelte-1xis06h");
-                toggle_class(button10, "on", /*buttonMap*/ ctx[0].dl);
                 add_location(button10, file, 111, 1, 2709);
                 attr_dev(button11, "class", "bumper left svelte-1xis06h");
-                toggle_class(button11, "on", /*buttonMap*/ ctx[0].lb);
                 add_location(button11, file, 112, 1, 2768);
                 attr_dev(button12, "class", "bumper right svelte-1xis06h");
-                toggle_class(button12, "on", /*buttonMap*/ ctx[0].rb);
                 add_location(button12, file, 113, 1, 2831);
                 attr_dev(button13, "class", "trigger left svelte-1xis06h");
-                attr_dev(
-                    button13,
-                    "style",
-                    (button13_style_value = /*trigger*/ ctx[3]("lt"))
-                );
                 add_location(button13, file, 114, 1, 2895);
                 attr_dev(button14, "class", "trigger right svelte-1xis06h");
-                attr_dev(
-                    button14,
-                    "style",
-                    (button14_style_value = /*trigger*/ ctx[3]("rt"))
-                );
                 add_location(button14, file, 115, 1, 2959);
                 attr_dev(section, "class", "controller svelte-1xis06h");
                 add_location(section, file, 93, 0, 1801);
@@ -1087,89 +1056,6 @@
                 }
             },
             p: function update(ctx, [dirty]) {
-                if (dirty & /*stickl*/ 2) {
-                    set_style(div1, "transform", /*stickl*/ ctx[1]());
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(div1, "click", /*buttonMap*/ ctx[0].lstick);
-                }
-
-                if (dirty & /*stickr*/ 4) {
-                    set_style(div3, "transform", /*stickr*/ ctx[2]());
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(div3, "click", /*buttonMap*/ ctx[0].rstick);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button0, "on", /*buttonMap*/ ctx[0].a);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button1, "on", /*buttonMap*/ ctx[0].b);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button2, "on", /*buttonMap*/ ctx[0].x);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button3, "on", /*buttonMap*/ ctx[0].y);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button4, "on", /*buttonMap*/ ctx[0].map);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button5, "on", /*buttonMap*/ ctx[0].menu);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button6, "on", /*buttonMap*/ ctx[0].xbox);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button7, "on", /*buttonMap*/ ctx[0].du);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button8, "on", /*buttonMap*/ ctx[0].dr);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button9, "on", /*buttonMap*/ ctx[0].dd);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button10, "on", /*buttonMap*/ ctx[0].dl);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button11, "on", /*buttonMap*/ ctx[0].lb);
-                }
-
-                if (dirty & /*buttonMap*/ 1) {
-                    toggle_class(button12, "on", /*buttonMap*/ ctx[0].rb);
-                }
-
-                if (
-                    dirty & /*trigger*/ 8 &&
-                    button13_style_value !==
-                        (button13_style_value = /*trigger*/ ctx[3]("lt"))
-                ) {
-                    attr_dev(button13, "style", button13_style_value);
-                }
-
-                if (
-                    dirty & /*trigger*/ 8 &&
-                    button14_style_value !==
-                        (button14_style_value = /*trigger*/ ctx[3]("rt"))
-                ) {
-                    attr_dev(button14, "style", button14_style_value);
-                }
             },
             i: noop,
             o: noop,
