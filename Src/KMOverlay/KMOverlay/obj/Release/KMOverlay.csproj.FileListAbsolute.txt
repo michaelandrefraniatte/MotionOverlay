@@ -50,3 +50,16 @@ C:\Users\micha\Documents\tool\MotionOverlay\KMOverlay\KMOverlay\obj\Release\KMOv
 C:\Users\micha\Documents\tool\MotionOverlay\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.CopyComplete
 C:\Users\micha\Documents\tool\MotionOverlay\KMOverlay\KMOverlay\obj\Release\KMOverlay.exe
 C:\Users\micha\Documents\tool\MotionOverlay\KMOverlay\KMOverlay\obj\Release\KMOverlay.pdb
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\KMOverlay.exe.config
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\KMOverlay.exe
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\KMOverlay.pdb
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Newtonsoft.Json.xml
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.Form1.resources
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.Properties.Resources.resources
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.GenerateResource.cache
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.CopyComplete
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.exe
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.pdb
