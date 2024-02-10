@@ -55,7 +55,6 @@ C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bi
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\KMOverlay.pdb
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Newtonsoft.Json.xml
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.AssemblyReference.cache
-C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.SuggestedBindingRedirects.cache
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.Form1.resources
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.Properties.Resources.resources
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.GenerateResource.cache

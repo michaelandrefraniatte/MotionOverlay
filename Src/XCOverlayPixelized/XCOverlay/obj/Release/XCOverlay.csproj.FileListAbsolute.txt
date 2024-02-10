@@ -94,7 +94,6 @@ C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCO
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\bin\Release\XCOverlay.pdb
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\bin\Release\Newtonsoft.Json.xml
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\obj\Release\XCOverlay.csproj.AssemblyReference.cache
-C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\obj\Release\XCOverlay.csproj.SuggestedBindingRedirects.cache
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\obj\Release\XCOverlay.Form1.resources
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\obj\Release\XCOverlay.Properties.Resources.resources
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayPixelized\XCOverlay\obj\Release\XCOverlay.csproj.GenerateResource.cache
