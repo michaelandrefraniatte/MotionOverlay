@@ -113,10 +113,6 @@ namespace XCOverlay
                 const string caption = "About";
                 MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (keyData == Keys.Escape)
-            {
-                this.Close();
-            }
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
