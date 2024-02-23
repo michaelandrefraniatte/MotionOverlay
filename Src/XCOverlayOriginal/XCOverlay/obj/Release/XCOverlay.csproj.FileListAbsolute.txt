@@ -85,7 +85,6 @@ C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOv
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.Properties.Resources.resources
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.csproj.GenerateResource.cache
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.csproj.CoreCompileInputs.cache
-C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.csproj.CopyComplete
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.exe
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.pdb
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\Microsoft.Web.WebView2.Core.xml
@@ -107,3 +106,10 @@ C:\Users\micha\Documents\tool\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.
 C:\Users\micha\Documents\tool\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.csproj.CopyComplete
 C:\Users\micha\Documents\tool\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.exe
 C:\Users\micha\Documents\tool\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.pdb
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\Microsoft.Web.WebView2.Core.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\bin\Release\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\XCOverlayOriginal\XCOverlay\obj\Release\XCOverlay.csproj.Up2Date

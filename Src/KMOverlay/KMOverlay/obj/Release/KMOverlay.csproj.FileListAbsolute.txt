@@ -59,6 +59,15 @@ C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\ob
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.Properties.Resources.resources
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.GenerateResource.cache
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.CoreCompileInputs.cache
-C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.CopyComplete
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.exe
 C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.pdb
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Microsoft.Web.WebView2.Core.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Microsoft.Web.WebView2.Core.xml
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\bin\Release\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\micha\Documents\github\MotionOverlayOfficial\Src\KMOverlay\KMOverlay\obj\Release\KMOverlay.csproj.Up2Date
